@@ -51,7 +51,8 @@ function jouer(){
 
     // mise à jour historique coup
     historique[joueurActif].push(coup);
-
+    
+    majProgresion();
     infoHistorique();
 
     // Vérifie si fin de jeu
@@ -117,6 +118,13 @@ function infoHistorique(){
         div.textContent = "[" + historique[joueur].join(", ") + "]";
         byId("info-historique").appendChild(div); 
     }
+}
+
+
+
+function majProgresion(){
+    let p = (nombre / total) * 100;
+    byId('progression-barre').style.width = p + "%";
 }
 
 

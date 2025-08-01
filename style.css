@@ -1,0 +1,12 @@
+#progression-container{
+    width: 100%;
+    background-color: whitesmoke;
+    height: 20px;
+}
+
+#progression-barre{
+    height: 100%;
+    background-color: blue;
+    width: 100%;
+    transition: width .3s ease;
+}

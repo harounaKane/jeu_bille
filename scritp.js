@@ -1,4 +1,4 @@
-let nombre;
+let nombre, total;
 let coup = 0;
 let coup_precedent = 0;
 let j1, j2;
@@ -12,7 +12,8 @@ byId("form").addEventListener("submit", (e) => {
     j1 = byId("j1").value;
     j2 = byId("j2").value;
     nombre = parseInt( byId('nbr').value ); 
-    
+    total = nombre;
+
     historique[j1] = [];
     historique[j2] = [];
 
@@ -117,5 +118,7 @@ function infoHistorique(){
         byId("info-historique").appendChild(div); 
     }
 }
+
+
 
 function byId(id){return document.getElementById(id);}

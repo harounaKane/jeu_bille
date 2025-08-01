@@ -14,20 +14,34 @@
 
     <main class="container text-center">
 
-        <div id="info">
+        <form action="" id="form">
+            <input type="text" placeholder="Prénom joueur 1" id="j1" value="Toto">
+            <input type="text" placeholder="Prénom joueur 2" id="j2" value="Tata">
+            <input type="number" value="20" id="nbr">
 
-        </div>
+            <input type="submit">
+        </form>
 
-        <button value="1">Prendre 1</button>
-        <button value="2">Prendre 2</button>
-        <button value="3">Prendre 3</button>
-        
-        <div id="erreur" class="alert mt-3 d-none"></div>
+        <section class="d-none" id="jeu">
+            <div id="info" class="mb-3">
 
-        <div id="historique" class="mt-2">
-            <h3>Historique des coups</h3>
-            <div id="info-historique"></div>
-        </div>
+            </div>
+
+            <div id="bille" class="mb-3">
+                
+            </div>
+
+            <button value="1">Prendre 1</button>
+            <button value="2">Prendre 2</button>
+            <button value="3">Prendre 3</button>
+            
+            <div id="erreur" class="alert mt-3 d-none"></div>
+
+            <div id="historique" class="mt-2">
+                <h3>Historique des coups</h3>
+                <div id="info-historique"></div>
+            </div>
+        </section>
     </main>
     
     <script src="scritp.js"></script>
